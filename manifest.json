@@ -1,0 +1,25 @@
+{
+	"manifest_version": 2,
+	"name": "speedRuler",
+	"version": "1.0",
+	"description": "网站前端性能检测",
+	"icons": {
+		"19": "images/logo.png",
+		"38": "images/logo.png",
+		"128": "images/logo128.png"
+	},
+
+	"browser_action": {
+		"default_title": "方便开发人员对网页的性能进行检测",
+		"default_popup": "popup.html"
+	},
+
+	"content_scripts": [{
+		"matches": ["*://*.com/*", "*://*.cn/*", "*://*.im/*"],
+		"js": ["./dist/content_scripts/ruler.min.js"]
+	}],
+
+	"background": {
+		"scripts": []
+	}
+}

@@ -1,0 +1,39 @@
+{
+  "name": "speedRuler",
+  "version": "1.0.0",
+  "description": "A chrome extension for measuring the web performance.",
+  "main": "popup.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KKKyrie/speedRuler.git"
+  },
+  "keywords": [
+    "chrome",
+    "plugin",
+    "speed",
+    "performance",
+    "web"
+  ],
+  "author": "kyrieliu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KKKyrie/speedRuler/issues"
+  },
+  "homepage": "https://github.com/KKKyrie/speedRuler#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^2.0.0-beta.2",
+    "browserify": "^14.4.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-streamify": "^1.0.2",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uglifyjs": "^0.6.2"
+  }
+}
