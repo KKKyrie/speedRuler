@@ -16,11 +16,11 @@ const Plugin = {
 
 		let that = this;
 
-		measureBtn.addEventListener('click', function(){
+		measureBtn.addEventListener('click', function() {
 			that.queryPerformance('MEASURE');
 		}, false);
 
-		resourceBtn.addEventListener('click', function(){
+		resourceBtn.addEventListener('click', function() {
 			that.queryPerformance('RESOURCE');
 		}, false);
 
@@ -28,14 +28,14 @@ const Plugin = {
 
 	queryPerformance(action) {
 		query({
-				active: true,
-				currentWindow: true
-		}, function(tabs){
-				sendMessage(tabs[0].id, {
-						action: action
-				}, function(res){
-						console.log(res);
-				})
+			active: true,
+			currentWindow: true
+		}, function(tabs) {
+			sendMessage(tabs[0].id, {
+				action: action
+			}, function(res) {
+				console.log(res);
+			})
 		})
 	},
 

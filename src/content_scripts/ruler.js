@@ -18,11 +18,11 @@ const Page = {
 
 		let loadTime = (time.loadEventEnd - time.loadEventStart) / 1000;
 
-		if(loadTime < 0) {
-				setTimeout(function() {
-						_this.getTiming();
-				}, 200);
-				return;
+		if (loadTime < 0) {
+			setTimeout(function() {
+				_this.getTiming();
+			}, 200);
+			return;
 		}
 
 		timingObj['重定向时间'] = (time.redirectEnd - time.redirectStart) / 1000;
@@ -39,7 +39,7 @@ const Page = {
 
 		let timingArr = [];
 
-		for (let key in timingObj){
+		for (let key in timingObj) {
 			timingArr.push({
 				'name': key,
 				'durations(s)': timingObj[key]
@@ -54,18 +54,18 @@ const Page = {
 	getResourceTiming() {
 
 		if (!window.performance && !window.performance.getEntries) {
-        return false;
-    }
+			return false;
+		}
 
-    var resourceArr = [];
-    window.performance.getEntries().forEach(function(perf){
-        resourceArr.push({
-            'url': perf.name,
-            'entryType': perf.entryType,
-            'type': perf.initiatorType,
-            'duration(ms)': perf.duration
-        });
-    });
+		var resourceArr = [];
+		window.performance.getEntries().forEach(function(perf) {
+			resourceArr.push({
+				'url': perf.name,
+				'entryType': perf.entryType,
+				'type': perf.initiatorType,
+				'duration(ms)': perf.duration
+			});
+		});
 
 		this.data.resourceArr = resourceArr;
 	},
@@ -91,7 +91,7 @@ const Page = {
 			}
 		});
 
-		window.addEventListener('load', function(){
+		window.addEventListener('load', function() {
 			that.initData();
 		}, false);
 	},
