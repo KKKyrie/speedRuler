@@ -4,7 +4,7 @@
   "description": "A chrome extension for measuring the web performance.",
   "main": "popup.js",
   "scripts": {
-    "test": ""
+    "build": "rm -rf dist/ && gulp && rm -rf node_modules/"
   },
   "repository": {
     "type": "git",
