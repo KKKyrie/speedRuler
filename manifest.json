@@ -15,7 +15,7 @@
 	},
 
 	"content_scripts": [{
-		"matches": ["*://*.com/*", "*://*.cn/*", "*://*.im/*", "*://localhost"],
+		"matches": ["*://*.com/*", "*://*.cn/*", "*://*.im/*", "*://localhost/*"],
 		"js": ["./dist/content_scripts/ruler.min.js"]
 	}],
 
