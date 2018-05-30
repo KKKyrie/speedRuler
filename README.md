@@ -1,4 +1,4 @@
-# :straight_ruler:speedRuler  
+# :straight_ruler: speedRuler  
 ### Intro
 speedRuler 是一款基于 Chrome 浏览器的扩展程序（Chrome Extension），她有着优雅的 UI 以及便捷的用法，借助浏览器的 Performance API 实现了对页面渲染各个时间点的统计和时长的计算。 
   
