@@ -8,7 +8,7 @@ speedRuler 是一款基于 Chrome 浏览器的扩展程序（Chrome Extension）
 1. 将本仓库 ```clone``` 到本地，打开浏览器的扩展界面：[chrome://extensions](chrome://extensions) 加载刚才下载的文件即可。
 2. 在保证扩展已加载成功后，打开网页，等到网页加载完成时，点击右上角的插件，点击按钮，相应的信息会出现在控制台。  
   
-![demo](http://kyrieliu.cn/markdown-pics/speedRuler/demo.gif)  
+<div align="center">![demo](http://kyrieliu.cn/markdown-pics/speedRuler/demo.gif)</div>  
 
   
 > 1. clone & load unpacked  
