@@ -16,3 +16,6 @@ speedRuler 是一款基于 Chrome 浏览器的扩展程序（Chrome Extension）
 > 2. click & see in the console
 
 > Thx to [草榴社区-1024研究所草榴前端工程师](https://www.talkingcoder.com/article/6393568564023870746)  
+  
+### License
+[MIT](https://github.com/KKKyrie/speedRuler/blob/master/LICENSE)
